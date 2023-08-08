@@ -1,38 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+/* Navbar */
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #bebebe;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    flex: 50%;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: orangered;
+}
+
+nav a {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+/* Card */
 .card {
-    width: 500px;
-    border: 1px solid black;
+    width: 1000px;
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 50px auto;
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 0 20px black;
+    display: flex;
 }
+
+.container-card {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.card-left {
+    flex: 30%;
+}
+
+.card-right {
+    flex: 70%;
+}
+
 .card img {
-    width: 100%;
+    width: 200px;
     height: auto;
-    display: block;
-    border-radius: 20px 20px 0 0;
+    display: flex;
+    border-radius: 20px;
 }
+
+
 .card h1, h3, p {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .card h1 {
     margin-bottom: 1px;
 }
+
 .card h3 {
     margin-top: 1px;
 }
+
 .card p {
     text-align: justify;
 }
+
 .card h5 {
     text-align: center;
     margin-bottom: 5px;
 }
-.card section, a {
+
+.card section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card a {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    margin-right: 20px;
     text-decoration: none;
     color: black;
+}
+
+.card a:hover {
+    color: orangered;
+    transform: scale(1.5);
 }
