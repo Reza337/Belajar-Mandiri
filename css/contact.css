@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+/* Navbar */
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #bebebe;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    flex: 50%;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: orangered;
+}
+
+nav a {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+/* Form */
+.container-form {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px black;
+    margin: 50px auto;
+}
+
+.container-form h1 {
+    text-align: center;
+}
+
+.container-form div {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.container-form div label {
+    font-weight: bold;
+}
+
+.container-form div input:hover,select:hover,textarea:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.container-form div input, select, textarea {
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container-form div textarea {
+    resize: none;
+}
+
+.container-form div button {
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px auto;
+    color: white;
+    height: 30px;
+}
+
+.container-form div button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
